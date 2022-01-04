@@ -2007,6 +2007,14 @@ body .pp-scrollable {
   transform: translate3d(0, 0, 0);
   opacity: 1;
 }
+@media screen {
+ #services{
+    text-align: center !important;
+ }   
+ #awards{
+    text-align: center !important;
+ }
+}
 .vlt-slide-photo {
   position: relative;
   z-index: 1;
