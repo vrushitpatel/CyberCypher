@@ -2007,7 +2007,7 @@ body .pp-scrollable {
   transform: translate3d(0, 0, 0);
   opacity: 1;
 }
-@media screen {
+@media screen and (max-width: 430px) {
  #services{
     text-align: center !important;
  }   

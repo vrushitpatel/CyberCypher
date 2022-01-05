@@ -133,6 +133,7 @@
 .wrapper {
   display: flex;
   justify-content: center;
+  margin-left: 10px;
 }
 
 #cta {
@@ -249,7 +250,7 @@ path.two {
   background-color: #fff;
   left: 0;
   top: 0;
-  border-radius: 1vw 1vw 0 0;
+  border-radius: 10px 10px 0 0;
   transform-origin: 50% 100%;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -360,13 +361,14 @@ path.two {
   }
 }
 .clock {
-  position: absolute;
+  /* position: absolute; */
   width: 70vw;
   top: 20rem;
-  left: 2rem;
+  left: 1rem;
   transform: translateY(-50%);
   perspective: 100vw; 
   perspective-origin: 50% 50%;
+  margin-top: 50px
 }
 .clock .digit {
   margin-right: 0.5vw;
@@ -376,5 +378,23 @@ path.two {
 }
 .clock .digit:last-child {
   margin-right: 0;
+}
+.clear{
+  clear: both;
+}
+.counter-data{
+  float:left;
+}
+.daya{
+  margin-left:30px;
+}
+.haya{
+  margin-left:70px;
+}
+.maya{
+  margin-left:69px;
+}
+.saya{
+  margin-left:75px;
 }
 /* clock :end */
