@@ -712,9 +712,9 @@ textarea:focus::-webkit-input-placeholder {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
+  /*-webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: center;*/
   -webkit-flex-basis: 100%;
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
@@ -743,8 +743,9 @@ textarea:focus::-webkit-input-placeholder {
   width: 100%;
 }
 .vlt-navbar--solid .vlt-navbar-inner {
-  padding-top: 1.875rem;
+  /* padding-top: 1.875rem;*/
   padding-bottom: 1.875rem;
+  
 }
 .vlt-navbar--solid .vlt-navbar-background {
   height: 100%;
@@ -755,7 +756,7 @@ textarea:focus::-webkit-input-placeholder {
   vertical-align: middle;
   color: inherit;
 }
-.vlt-navbar .vlt-navbar-logo h2 {
+.vlt-navbar h2 {
   font-size: 1.75rem;
   font-weight: 700;
   margin: 0;
@@ -765,7 +766,23 @@ textarea:focus::-webkit-input-placeholder {
 .vlt-navbar .vlt-navbar-logo img {
   display: block;
   max-width: none;
-  max-height: 24px;
+  max-height: 110px;
+  margin-top: -20px;
+}
+@media screen and (max-width: 430px){
+    .vlt-navbar-logo {
+        height: 20px;
+        width: 20px;
+    }
+    .media50{
+      margin-top:25px;
+    }
+    .vlt-navbar .vlt-navbar-logo img {
+      display: block;
+      max-width: none;
+      max-height: 70px;
+      margin-top: -15px;
+    }
 }
 .is-light .vlt-navbar .vlt-navbar-logo img.black {
   display: none;
@@ -779,6 +796,7 @@ textarea:focus::-webkit-input-placeholder {
 }
 .vlt-navbar-contacts {
   margin-left: 10%;
+  margin-top: 10px;
 }
 .vlt-navbar-contacts ul {
   display: -webkit-inline-box;
@@ -817,6 +835,13 @@ textarea:focus::-webkit-input-placeholder {
 .vlt-menu-burger {
   font-size: 1.75rem;
   line-height: 0;
+  margin-top: -60px;
+}
+@media screen and (max-width: 430px){
+    .vlt-menu-burger{
+        margin-top: 20px;
+        margin-right: 10px;
+    }
 }
 .vlt-menu-burger svg {
   width: 1em;
@@ -1678,11 +1703,11 @@ body .pp-scrollable {
 }
 .vlt-btn--secondary {
   color: #fff;
-  background-color: #222;
+  background-color: #0E43AE;
 }
 .vlt-btn--secondary:hover {
   color: #fff;
-  background-color: var(--p1);
+  background-color: #1e3594;
 }
 .vlt-contact-form .message {
   font-size: 0.875rem;
@@ -2007,6 +2032,7 @@ body .pp-scrollable {
   transform: translate3d(0, 0, 0);
   opacity: 1;
 }
+
 .vlt-slide-photo {
   position: relative;
   z-index: 1;
@@ -2016,6 +2042,17 @@ body .pp-scrollable {
   display: inline-block;
   overflow: hidden;
   border-radius: 10px;
+}
+@media screen and (max-width: 430px) {
+ #services{
+    text-align: center !important;
+ }   
+ #awards{
+    text-align: center !important;
+ }
+ .vlt-slide-photo__inside{
+     display: none;
+ }
 }
 .vlt-slide-photo__caption {
   font-size: 0.875rem;

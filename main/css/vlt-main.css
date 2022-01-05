@@ -14,7 +14,7 @@
 /* 01. Helpers */
 :root
 {
-    --p1: #c3323a;
+    --p1: #1e3594;
     --pf: Inter;
 }
 
@@ -2779,6 +2779,15 @@ body .pp-scrollable
 
     opacity: 1;
 }
+
+@media (min-width: 460px){
+    #services .vlt-services .vlt-services__text .vlt-services__link .vlt-services__title{
+        text-align: center !important;
+        align-items: center !important;
+    }
+}
+
+
 
 /* WIDGET: SLIDE PHOTO
 -------------------------------------------- */
