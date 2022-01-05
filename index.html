@@ -8,7 +8,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<!--Favicon-->
-	<link rel="icon" type="image/png" href="assets/img/root/favicon.png">
+	<link rel="icon" type="image/png" href="main/img/cc-logo.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
 	 crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<!--Framework-->
@@ -24,6 +24,104 @@
 
 	<link rel="stylesheet" href='main/css/howto.css'>
 
+  <style>
+    .bg {
+      width:100%
+      height: 100%;
+      animation:slide 3s ease-in-out infinite alternate;
+      background-image: linear-gradient(-60deg, #0c41aa 50%, #1349b5 50%);
+      bottom:0;
+      left:-50%;
+      opacity:.5;
+      position:fixed;
+      right:-50%;
+      top:0;
+      z-index:-1;
+    }
+
+    .bg2 {
+      animation-direction:alternate-reverse;
+      animation-duration:4s;
+    }
+
+    .bg3 {
+      animation-duration:5s;
+    }
+
+    @keyframes slide {
+      0% {
+        transform:translateX(-25%);
+      }
+      100% {
+        transform:translateX(25%);
+      }
+    }
+
+    .content {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    body .pp-scrollable {
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+
+    .gap-3{
+      height: 30px;  
+    }
+
+    .gap-4{
+      height: 40px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      /* [class*="gap-"] {
+        height: 0px;
+      } */
+
+      .gap-3{
+        margin-top: -70px;  
+      }
+      .gap-4{
+        margin-top: -30px;
+      }
+      .god-code-mob {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+      }
+      .text-c-mob{
+        text-align: center;
+      }
+      .no-margin-left {
+        margin-left: 0 !important;
+      }
+      .wrapper {
+        margin-left: -2px;
+        width: 100%;
+      }
+      .sf-menu li {
+        text-align: center;
+        padding: 1rem !important;
+      }
+    }
+
+    .text-c{
+      text-align: center;
+    }
+
+    .god-code {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 50%)
+    }
+
+  </style>
+
 
 </head>
 
@@ -35,17 +133,18 @@
 			<div class="vlt-navbar-inner">
 				<div class="vlt-navbar-inner--left">
 					<!--Logo--><a class="vlt-navbar-logo" href="index.html">
-						<h2 class="black">Cyber Cypher</h2>
+						<!-- <h2 class="black">Cyber Cypher</h2> -->
 
-						<!-- <img class="black" src='main/img/root/logo-black.png' alt="Mikael"><img class="white"
-							src='main/img/root/logo-white.png' alt="Mikael"> -->
+						<!-- <img class="black" src='main/img/root/logo-black.png' alt="Mikael"> -->
+            <img
+							src='main/img/cc-logo.png' alt="Cyber Cypher" style="filter: drop-shadow(6px 6px 7px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 5px rgba(255, 255, 255, 0.2));" > 
 					</a>
 					<!--Contacts-->
 					<nav class="vlt-navbar-contacts d-none d-md-block">
 						<ul>
 							<li><a href="tel:+919619912881">(+91) 961 991 2881</a></li>
 							<li class="sep">/</li>
-							<li><a href="mailto:scmpstme.techcomm@gmail.com">scmpstme.techcomm@gmail.com</a></li>
+							<li><a href="mailto:fest.taqneeq@gmail.com">fest.taqneeq@gmail.com</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -78,7 +177,7 @@
 		</div>
 		<nav class="vlt-offcanvas-menu__navigation">
 			<!--Navigation-->
-			<ul class="sf-menu">
+			<ul class="sf-menu god-code-mob">
 				<li data-menuanchor="Home"><a href="#Home">Home</a></li>
 				<li data-menuanchor="Services"><a href="#Services">Why Cyber Cypher?</a></li>
 				<li data-menuanchor="Experience"><a href="#Skills">How To Apply</a></li>
@@ -91,9 +190,10 @@
 		</nav>
 		<div class="vlt-offcanvas-menu__footer">
 			<!--Socials-->
-			<div class="vlt-offcanvas-menu__socials"><a href="https://www.youtube.com/channel/UCvu11QwUknwd02pQ4Lv6sTA/featured" target="_blank">YouTube</a><a
-				 href="https://www.instagram.com/techcommmpstme/" target="_blank">Instagram</a>
-				<a href="https://www.facebook.com/Tech.mpstme/" target="_blank">Facebook</a>
+			<div class="vlt-offcanvas-menu__socials">
+        <a
+				 href="https://instagram.com/taqneeqfest?utm_medium=copy_link" target="_blank">Instagram</a><a href="https://www.youtube.com/channel/UC8ZivFUH8eR848Pv-Uljlpw" target="_blank">YouTube</a>
+				<a href="https://www.linkedin.com/company/taqneeqfest" target="_blank">LinkedIn</a>
 			</div>
 			<!--Copyright-->
 			<div class="vlt-offcanvas-menu__copyright">
@@ -112,152 +212,62 @@
 			<!--Home-->
 			<!--Section-->
 			<div class="vlt-section pp-scrollable" data-anchor="Home" data-brightness="dark" style="background-image: -webkit-radial-gradient( 50% 50%, circle closest-side, rgba(11, 60, 175, 0.8) 0%, #0c44b3 100% );">
+
 				<div class="vlt-section__vertical-align">
-					<div class="vlt-section__content">
-						<!--Particles-->
-						<div class="vlt-section__particles">
-							<div class="vlt-particle vlt-fade-in-left vlt-custom--1451" style="background-image: url('main/img/root/plus-dark-pattern.png'); transition-duration: 1s;">
-							</div>
-							<div class="vlt-particle d-none d-xl-block vlt-fade-in-right vlt-custom--1512" style="background-image: url('main/img/root/elipse-home-slide.png'); transition-duration: 1.5s; transition-delay: 300ms;">
-							</div>
-							<div class="vlt-particle vlt-custom--4124 landingimg" style="background-image: url('main/img/attachment-01.png')">
-							</div>
-						</div>
-						<div class="container landingcontainer">
-							<div class="row">
-								<div class="col-lg-7 offset-lg-1">
-									<!--Animated Block-->
-									<div class="vlt-animated-block" style="animation-delay:0s; animation-duration:700ms;">
-										<h1 class="vlt-large-heading has-white-color" style="margin-left: -20px;">Cyber Cypher</h1>
-										<div class="vlt-gap-10"></div>
-										<h5 class="vlt-display-1 has-white-color" style="margin-left: -15px; font-size:1 rem;"> 24 HRS Hackathon - NMIMS,
-											MPSTME
-										</h5>
-										<div class="vlt-gap-40"></div>
-										<div class="row">
-											<div id="counter">
+          <div class="bg"></div>
+          <div class="bg bg2"></div>
+          <div class="bg bg3"></div>
+          <div class="content">
+            <div class="vlt-section__content">
+              <!--Particles-->
+              <div class="vlt-section__particles">
+                <div class="vlt-particle vlt-fade-in-left vlt-custom--1451" style="background-image: url('main/img/root/plus-dark-pattern.png'); transition-duration: 1s;">
+                </div>
+                <div class="vlt-particle d-none d-xl-block vlt-fade-in-right vlt-custom--1512" style="background-image: url('main/img/root/elipse-home-slide.png'); transition-duration: 1.5s; transition-delay: 300ms;">
+                </div>
+                <div class="vlt-particle vlt-custom--4124 landingimg" style="background-image: url('main/img/attachment-01.png')">
+                </div>
+                <!--Hero Image-->
+              </div>
+              <div class="container landingcontainer">
+                <div class="row">
+                  <div class="col-lg-7 offset-lg-0">
+                    <!--Animated Block-->
+                    <div class="vlt-animated-block" style="animation-delay:0s; animation-duration:700ms;">
+                      <h1 class="vlt-large-heading has-white-color god-code-mob text-c-mob no-margin-left" style="margin-left: -20px; font-family: InfynyteDysplay;" >Cyber Cypher</h1>
+                      <div class="gap-3"></div>
+                      <h5 class="vlt-display-1 has-white-color god-code-mob text-c-mob no-margin-left" style="font-size: 1.1rem; margin-left: -10px; font-family: InfynyteDysplay;"> 24 HRS Hackathon : NMIMS,MPSTME </h5>
+                      <div class="gap-4"></div>
+                      <div class="row">
+                        <div id="counter">
+                          <div class="vlt-gap-20--sm"></div>
+                        </div>
+                        <!--Counter end-->
 
+                        <div class="wrapper">
+                          <a id="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdE4RIXhxhAzzUB4wfZ5IiBxk3Y-cdSGM29VoGZt9Zv52wNcg/viewform" target="_blank">
+                            <h5 style="color: #fff; letter-spacing: 0.075rem; padding: 2px 0; transform: skew(10deg);">REGISTER</h5>
+                            <span>
+                              <svg width="42px" height="36px" viewBox="0 0 66 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                  <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                                  <path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                                  <path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+                                </g>
+                              </svg>
+                            </span>
+                            </a>
+                        </div>
+                        <!-- Wrapper end for button-->
+                      </div>
+                    </div>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-
-
-
-
-
-												<!-- <button
-													style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#0445AF;color:#FFFFFF;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;">Launch
-													me</button> -->
-												<div class="vlt-gap-20--sm"></div>
-											</div>
-											<!--Counter end-->
-
-
-											<div class="wrapper">
-												<a id="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdE4RIXhxhAzzUB4wfZ5IiBxk3Y-cdSGM29VoGZt9Zv52wNcg/viewform">
-													<span>REGISTER</span>
-    <span>
-      <svg width="66px" height="43px" viewBox="0 0 66 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
-          <path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
-          <path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
-        </g>
-      </svg>
-    </span>
-  </a>
-</div><!-- Wrapper end for button-->
-											
-											
-
-										</div>
-      
-										<!-- <div class="vlt-gap-40"></div><a class="vlt-link has-white-color" href="#">Watch Resume</a> -->
-									</div>
-                  <div class="clock">
-    
-    <div class="digit tenday">
-        <span class="base"></span>
-        <div class="flap over front"></div>
-        <div class="flap over back"></div>
-        <div class="flap under"></div>
-    </div>
-    
-    <div class="digit day">
-        <span class="base"></span>
-        <div class="flap over front"></div>
-        <div class="flap over back"></div>
-        <div class="flap under"></div>
-    </div>
-    
-    
-    <div class="digit tenhour">
-        <span class="base"></span>
-        <div class="flap over front"></div>
-        <div class="flap over back"></div>
-        <div class="flap under"></div>
-    </div>
-    
-
-    <div class="digit hour">
-        <span class="base"></span>
-        <div class="flap over front"></div>
-        <div class="flap over back"></div>
-        <div class="flap under"></div>
-    </div>
-   
-
-    <div class="digit tenmin">
-        <span class="base"></span>
-        <div class="flap over front"></div>
-        <div class="flap over back"></div>
-        <div class="flap under"></div>
-    </div>
-
-    <div class="digit min">
-        <span class="base"></span>
-        <div class="flap over front"></div>
-        <div class="flap over back"></div>
-        <div class="flap under"></div>
-    </div>
-     
-
-    <div class="digit tensec">
-        <span class="base"></span>
-        <div class="flap over front"></div>
-        <div class="flap over back"></div>
-        <div class="flap under"></div>
-    </div>
-
-    <div class="digit sec">
-        <span class="base"></span>
-        <div class="flap over front"></div>
-        <div class="flap over back"></div>
-        <div class="flap under"></div>
-    </div>
-    
-</div>
-<div class="clear"></div>
-
-<div class="titles">
-  <div class="counter-data daya">
-   <h6> D </h6>
-  </div>
-  <div class="counter-data haya">
-   <h6> H </h6>
-  </div>
-  <div class="counter-data maya">
-   <h6> M </h6>
-  </div>
-  <div class="counter-data saya">
-   <h6> S </h6>
-  </div>
-</div>
-<div class="clear"></div>
-
- 
-								</div>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 			<!--Services-->
@@ -284,12 +294,22 @@
 										<div class="vlt-gap-40"></div>
 										<h6>Problem <br>Statements</h6>
 									</div>
+                  <div class="vlt-animated-block" style="animation-delay:0s; animation-duration:700ms;">
+										<!--Counter Up-->
+										<div class="vlt-counter-up" data-delimiter="">
+											<span >∞</span>
+										</div>
+										<div class="vlt-gap-40"></div>
+										<h6>Infinite <br>Possibilities?</h6>
+									</div>
+                  
 								</div>
+                
 								<div class="col-lg-8 col-md-12">
 									<!--Animated Block-->
 									<div class="vlt-animated-block" style="animation-delay:100ms; animation-duration:700ms;">
-										<h4>Be it exercising your technical skills, handing pressure or ability to work in a team, <span
-												class="has-first-color">Cyber Cypher is the place to be!
+										<h4>Be it developing or exercising your technical skills, handling pressure, or team-work abilities, <span
+												class="has-first-color">Cyber Cypher is the platform for you!
 											</span></h4>
 									</div>
 									<div class="vlt-gap-70"></div>
@@ -299,11 +319,9 @@
 											<div class="vlt-animated-block" style="animation-delay:200ms; animation-duration:700ms;">
 												<!--Services-->
 												<div class="vlt-services">
-													<h5 class="vlt-services__title">Development
+													<h5 class="vlt-services__title">Endless Opportunities
 													</h5>
-													<p class="vlt-services__text">Challenge your technical skills by implementing them to solve
-														industry designed problems and develop proficiency in
-														several programming languages.
+													<p class="vlt-services__text">Put your coding prowess to the test, learn something new, build new connections, or just experience a high-speed hackathon in session - the event might end in 24 hours but the opportunities are endless!
 													</p>
 												</div>
 											</div>
@@ -314,38 +332,27 @@
 											<div class="vlt-animated-block" style="animation-delay:300ms; animation-duration:700ms;">
 												<!--Services-->
 												<div class="vlt-services">
-													<h5 class="vlt-services__title">Teamwork
+													<h5 class="vlt-services__title">Build and Innovate
 													</h5>
-													<p class="vlt-services__text">Hone your communication skills by working in a group with your
-														peers.
+													<p class="vlt-services__text">Cyber Cypher provides a platform that knows no bounds. Your one-of-a-kind creativity and tech prowess are the only things that decide how far you’re willing to go with your ideas and their implementations.
 													</p>
 												</div>
 											</div>
 											<div class="vlt-gap-40"></div>
 										</div>
-										<div class="col-md-6">
-											<!--Animated Block-->
-											<div class="vlt-animated-block" style="animation-delay:400ms; animation-duration:700ms;">
-												<!--Services-->
-												<div class="vlt-services">
-													<h5 class="vlt-services__title">Creativity
-													</h5>
-													<p class="vlt-services__text">Get your creative juices flowing while designing your very own
-														tool.
-													</p>
-												</div>
-											</div>
-											<div class="vlt-gap-40--sm"></div>
-										</div>
-										<div class="col-md-6">
+										
+										<div class="col-md-12">
 											<div class="vlt-animated-block" style="animation-delay:500ms; animation-duration:700ms;">
 
 												<div class="vlt-services">
-													<h5 class="vlt-services__title">Miscellaneous
-													</h5>
-													<p class="vlt-services__text">Garnish your CV with a verified certification and win exciting
-														prizes worth <strong>₹ 50,000/-</strong> .
+													<!-- <h5 class="vlt-services__title">Miscellaneous
+													</h5> -->
+													<p class="vlt-services__text">The certificates every participant is awarded add a lot of value to your <span
+												class="has-first-color"><strong>CV</strong></span>, too…
 													</p>
+                          <br>
+                          <p class="vlt-services__text">And if you’re still in doubt, allow the prize pool of <span
+												class="has-first-color"><strong>Rs 50,000</strong></span> to convince you to give us a chance?</p>
 												</div>
 											</div>
 										</div>
@@ -356,46 +363,6 @@
 					</div>
 				</div>
 			</div>
-			<!--Experience-->
-			<!--Section-->
-			<!-- <div class="vlt-section pp-scrollable" data-anchor="Experience" data-brightness="dark">
-				<div class="vlt-section__vertical-align">
-					<div class="vlt-section__content">
-						<div class="vlt-section__ken-burn-background"><img src='main/img/attachment-02.jpg' alt="">
-						</div>
-
-						<div class="container">
-							<div class="row align-items-center">
-								<div class="col-lg-4 offset-lg-1">
-									<div class="vlt-slide-photo">
-										<div class="vlt-slide-photo__inside"><img src='main/img/apply.jpg' alt="">
-										</div>
-									</div>
-									<div class="vlt-gap-100--md"></div>
-								</div>
-								<div class="col-lg-5 offset-lg-1 howtoapply">
-									<div class="vlt-animated-block" style="animation-delay:100ms; animation-duration:700ms;">
-										<h3>How To Apply</h3>
-										<h4>Pick your interests out of these <span class="has-first-color">3 domains, namely:</span></h4>
-										<div class="vlt-gap-20"></div>
-										<li><i class="bi bi-check"></i><span class="has-first-color">Elementary / (PPS)</span> - A time
-											limit of X hours will be given to you to
-											solve a problem statement using the fundamentals of
-											programming.</li>
-										<li><i class="bi bi-check"></i> <span class="has-first-color">Data Science</span> - Develop a
-											program to analyze data sets using AI based
-											technology under a time crunch.</li>
-										<li><i class="bi bi-check"></i> <span class="has-first-color">Blockchain</span> - You will be given
-											a blockchain problem statement that
-											needs to be coded in solidity across a few weeks.</li>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div> -->
-			<!--Skills-->
 
 
 			<!--Section-->
@@ -425,171 +392,28 @@
 										<div class="vlt-slide-photo__particle vlt-fade-in-left--small has-border-radius has-box-shadow"
 											style="left: 30px; bottom: -50px; width: 100px; transition-delay: 900ms;"><img
 												src='main/img/dssg.png' alt=""></div>
-										<!-- <div class="vlt-slide-photo__particle vlt-fade-in-left--small negative-z-index"
-											style="right: -40px; bottom: -30px; width: 290px; transition-delay: 1.2s;"><img
-												src='main/img/btc.png' alt=""></div> -->
 									</div>
 									<div class="vlt-gap-100--md"></div>
 								</div>
 								<div class="col-lg-5 offset-lg-1 howtoapply">
 									<!--Animated Block-->
 									<div class="vlt-animated-block" style="animation-delay:100ms; animation-duration:700ms;">
-										<h4>Pick your interests out of these <span class="has-first-color">2 domains, namely:</span></h4>
+										<h4>What Suits You Best:</h4>
 										<div class="vlt-gap-20"></div>
-										<li><i class="fas fa-check"></i> <span class="has-first-color"> Elementary / (PPS)</span> - Limited
-											time frame will be given to you to
-											solve a problem statement using the fundamentals of
-											programming.</li>
-										<li><i class="fas fa-check"></i> <span class="has-first-color">Data Science</span> - Develop a
-											program to analyze data sets using AI based
-											technology under a time crunch.</li>
+										<li><i class="fas fa-check"></i> <span class="has-first-color"> Category 1 - Elementary Level</span> - Use the absolute fundamentals of programming to develop your solutions for an elementary level problem statement, which allows you to explore the bounds of your skill-sets all while ensuring you’re only expected to make use of the very basics to dazzle everyone!</li>
+                    <li><i class="fas fa-check"></i> <span class="has-first-color"> Category 2 - Advanced Level</span> - Focusing on the data sciences, you can use any and all softwares you’re familiar with to develop AI-based technologies as a solution to a problem statement that’ll test your documentation-reading abilities as well as Googling prowess alike.</li>
 										<div class="vlt-gap-20"></div>
-										<h5>Participation fees are mentioned below:</h5>
-										<div class="vlt-gap-20"></div>
-										<li><i class="fas fa-check"></i> <span class="has-first-color">Participants Fees :</span> ₹ 195/-</li>
-										<li>This includes food and beverages for the two days.</li>
-
+                    <div class="vlt-gap-20"></div>
+										<li>We’re opening up this portal to a world of innovation and opportunities for you at a nominal participation fee of<span class="has-first-color"> Rs 195 (including food and beverages during your stay)</span>.</li>
 									</div>
-									<!-- <p class="fst-italic" style="margin-top: 10px;">
-																		Round 2: THE PROTOTYPE DEMONSTRATION
-																	</p>
-																	<ul>
-																		<li><i class="bi bi-check"></i> In the prototype demonstration, you will have to show your
-																			working prototype.</li>
-																		<li><i class="bi bi-check"></i> The jury members will be evaluating, judging and giving
-																			feedback during the prototype demonstration</li>
-																		<li><i class="bi bi-check"></i> All other details will be mailed directly to the qualifying
-																			teams</li>
-																	</ul> -->
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!--Portfolio-->
 			<!--Section-->
-
-			<!--	<div class="vlt-section pp-scrollable" data-anchor="Portfolio" data-brightness="dark">
-				<div class="vlt-section__vertical-align">
-					<div class="vlt-section__content">
-						Ken Burn Effect
-						<div class="vlt-section__ken-burn-background"><img src='main/img/attachment-03.jpg' alt=""></div>
-						<div class="vlt-project-showcase-slider d-block d-lg-none">
-							<div class="container">
-								<div class="swiper-container">
-									<div class="swiper-wrapper">
-										<div class="swiper-slide">
-											<div class="vlt-work">
-												<div class="vlt-work-thumbnail"><img src='main/img/portfolio-01.jpg' alt=""><a class="vlt-work-thumbnail__link" href="#"></a></div>
-												<div class="vlt-work-content">
-													<header class="vlt-work-header">
-														<div class="vlt-work-meta"><span>Branding</span><span>01 June 2020</span></div>
-														<h3 class="vlt-work-title"><a href="#">Typography</a></h3>
-													</header>
-													<footer class="vlt-work-footer"><a class="vlt-work__link vlt-link-with-arrow" href="#"><span class="vlt-link-with-arrow__text">View case</span><span class="vlt-link-with-arrow__icon">🡒</span></a></footer>
-												</div>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="vlt-work">
-												<div class="vlt-work-thumbnail"><img src='main/img/portfolio-02.jpg' alt=""><a class="vlt-work-thumbnail__link" href="#"></a></div>
-												<div class="vlt-work-content">
-													<header class="vlt-work-header">
-														<div class="vlt-work-meta"><span>Design</span><span>01 June 2020</span></div>
-														<h3 class="vlt-work-title"><a href="#">Journal Mockup</a></h3>
-													</header>
-													<footer class="vlt-work-footer"><a class="vlt-work__link vlt-link-with-arrow" href="#"><span class="vlt-link-with-arrow__text">View case</span><span class="vlt-link-with-arrow__icon">🡒</span></a></footer>
-												</div>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="vlt-work">
-												<div class="vlt-work-thumbnail"><img src='main/img/portfolio-03.jpg' alt=""><a class="vlt-work-thumbnail__link" href="#"></a></div>
-												<div class="vlt-work-content">
-													<header class="vlt-work-header">
-														<div class="vlt-work-meta"><span>Inspiration</span><span>01 June 2020</span></div>
-														<h3 class="vlt-work-title"><a href="#">Glued Paper</a></h3>
-													</header>
-													<footer class="vlt-work-footer"><a class="vlt-work__link vlt-link-with-arrow" href="#"><span class="vlt-link-with-arrow__text">View case</span><span class="vlt-link-with-arrow__icon">🡒</span></a></footer>
-												</div>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="vlt-work">
-												<div class="vlt-work-thumbnail"><img src='' alt=""><a class="vlt-work-thumbnail__link" href="#"></a></div>
-												<div class="vlt-work-content">
-													<header class="vlt-work-header">
-														<div class="vlt-work-meta"><span>Branding</span><span>01 June 2020</span></div>
-														<h3 class="vlt-work-title"><a href="#">Fashion Men</a></h3>
-													</header>
-													<footer class="vlt-work-footer"><a class="vlt-work__link vlt-link-with-arrow" href="#"><span class="vlt-link-with-arrow__text">View case</span><span class="vlt-link-with-arrow__icon">🡒</span></a></footer>
-												</div>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="vlt-work">
-												<div class="vlt-work-thumbnail"><img src='main/img/portfolio-05.jpg' alt=""><a class="vlt-work-thumbnail__link" href="#"></a></div>
-												<div class="vlt-work-content">
-													<header class="vlt-work-header">
-														<div class="vlt-work-meta"><span>Design</span><span>01 June 2020</span></div>
-														<h3 class="vlt-work-title"><a href="#">Graphic Design</a></h3>
-													</header>
-													<footer class="vlt-work-footer"><a class="vlt-work__link vlt-link-with-arrow" href="#"><span class="vlt-link-with-arrow__text">View case</span><span class="vlt-link-with-arrow__icon">🡒</span></a></footer>
-												</div>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="vlt-work">
-												<div class="vlt-work-thumbnail"><img src='main/img/portfolio-06.jpg' alt=""><a class="vlt-work-thumbnail__link" href="#"></a></div>
-												<div class="vlt-work-content">
-													<header class="vlt-work-header">
-														<div class="vlt-work-meta"><span>Inspiration</span><span>01 June 2020</span></div>
-														<h3 class="vlt-work-title"><a href="#">Modern Glasses</a></h3>
-													</header>
-													<footer class="vlt-work-footer"><a class="vlt-work__link vlt-link-with-arrow" href="#"><span class="vlt-link-with-arrow__text">View case</span><span class="vlt-link-with-arrow__icon">🡒</span></a></footer>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="vlt-project-showcase d-none d-lg-flex">
-							<ul class="vlt-project-showcase__items">
-								<li class="vlt-project-showcase__item">
-									<h3 class="vlt-project-showcase__item__title"><a href="#">Typography</a></h3><span class="vlt-project-showcase__item__category">Branding</span>
-								</li>
-								<li class="vlt-project-showcase__item">
-									<h3 class="vlt-project-showcase__item__title"><a href="#">Journal Mockup</a></h3><span class="vlt-project-showcase__item__category">Design</span>
-								</li>
-								<li class="vlt-project-showcase__item">
-									<h3 class="vlt-project-showcase__item__title"><a href="#">Glued Paper</a></h3><span class="vlt-project-showcase__item__category">Inspiration</span>
-								</li>
-								<li class="vlt-project-showcase__item">
-									<h3 class="vlt-project-showcase__item__title"><a href="#">Fashion Men</a></h3><span class="vlt-project-showcase__item__category">Branding</span>
-								</li>
-								<li class="vlt-project-showcase__item">
-									<h3 class="vlt-project-showcase__item__title"><a href="#">Graphic Design</a></h3><span class="vlt-project-showcase__item__category">Design</span>
-								</li>
-								<li class="vlt-project-showcase__item">
-									<h3 class="vlt-project-showcase__item__title"><a href="#">Modern Glasses</a></h3><span class="vlt-project-showcase__item__category">Inspiration</span>
-								</li>
-							</ul>
-							<div class="vlt-project-showcase__images">
-								<div class="vlt-project-showcase__image"><img src='main/img/portfolio-01.jpg' alt=""></div>
-								<div class="vlt-project-showcase__image"><img src='main/img/portfolio-02.jpg' alt=""></div>
-								<div class="vlt-project-showcase__image"><img src='main/img/portfolio-03.jpg' alt=""></div>
-								<div class="vlt-project-showcase__image"><img src='main/img/portfolio-04.jpg'alt=""></div>
-								<div class="vlt-project-showcase__image"><img src='main/img/portfolio-05.jpg' alt=""></div>
-								<div class="vlt-project-showcase__image"><img src='main/img/portfolio-06.jpg' alt=""></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>-->
-			<!--Awards-->
-			<!--Section-->
+	
 			<div class="vlt-section pp-scrollable" data-anchor="Awards" data-brightness="light">
 				<div class="vlt-section__vertical-align">
 					<div class="vlt-section__content">
@@ -604,9 +428,9 @@
 								<div class="col-lg-5 offset-lg-1" id="awards">
 									<!--Animated Block-->
 									<div class="vlt-animated-block" style="animation-delay:0s; animation-duration:700ms;">
-										<h4>About, <span class="has-first-color">NMIMS MPSTME.</span></h4>
+										<h4>About, <span class="has-first-color">Cyber Cypher</span></h4>
 										<div class="vlt-gap-20"></div>
-										<p>Offers B. Tech, M. Tech, MCA and PhD courses and one of its kind MBA (Tech) courses.</p>
+										<p>Incepted as part of the 14th edition of Taqneeq, MPSTME’s annual tech-fest, and one of the largest of its kind in Mumbai, Cyber Cypher is a 24-hour hackathon that aims to provide a platform to both, budding and experienced coders alike, to open up avenues for them that’ll allow a higher understanding and appreciation for the myriad possibilities that lay unlocked at their fingertips by being a part of such a dynamic field of computer sciences.</p>
 									</div>
 									<div class="vlt-gap-50"></div>
 									<!--Animated Block-->
@@ -614,54 +438,19 @@
 										<!--Award Item-->
 										<div class="vlt-award-item">
 											<div class="vlt-award-item__content">
-												<h6>Cyber Cypher, MPSTME</h6>
-												<p>Cyber Cypher is an official event of the Engineering School of NMIMS, Mumbai.
-													A 24-hour hackathon to tentatively be held over the weeks of January.</p>
+												<h6>NMIMS MPSTME-</h6>
+												<p>Ranked 16th among the numerous private engineering colleges in India, the Mukesh Patel School of Technology Management and Engineering, a constituent of SVKM’s NMIMS, was essentially established to serve the need of creating an innovative and integrated space for technology education interspersed with sound management practises that converged with changing industry as well as societal needs.</p>
 											</div>
 										</div>
 									</div>
 									<div class="vlt-gap-30"></div>
-									<!--Animated Block-->
-									<div class="vlt-animated-block" style="animation-delay:200ms; animation-duration:700ms;">
-										<!--Award Item-->
-										<div class="vlt-award-item">
-											<div class="vlt-award-item__content">
-												<h6>Our Ranking</h6>
-												<p>MPSTME has been ranked 16th among Private Engineering Colleges in India by Outlook.</p>
-											</div>
-										</div>
-									</div>
-									<div class="vlt-gap-30"></div>
-									<!--Animated Block-->
-									<div class="vlt-animated-block" style="animation-delay:300ms; animation-duration:700ms;">
-										<!--Award Item-->
-										<div class="vlt-award-item">
-											<div class="vlt-award-item__content">
-												<h6>Our Achievements</h6>
-												<p>NMIMS has been accredited by NAAC with 3.59 CGPA and Grade A+ in the 3rd cycle and a
-													‘five-star’ rating to its Mumbai
-													campus.</p>
-											</div>
-										</div>
-									</div>
 									<div class="vlt-gap-100--md"></div>
 								</div>
 								<div class="col-lg-4 offset-lg-1">
-									<!--Animated Block-->
 									<div class="vlt-animated-block" style="animation-delay:400ms; animation-duration:700ms;">
 										<div class="vlt-slide-photo">
 											<div class="vlt-slide-photo__inside"><img src='main/img/nmims.jpg' alt="">
-												<!--Video Button-->
-												<!-- <div class="vlt-video-button center-mode"><a href="https://vimeo.com/367945766" data-fancybox
-														data-small-btn="true" rel="nofollow"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-															height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-															stroke-linecap="round" stroke-linejoin="round" class="feather feather-play">
-															<polygon points="5 3 19 12 5 21 5 3" />
-														</svg></a>
-													<h6>Watch Video</h6>
-												</div> -->
 											</div>
-											<!-- <div class="vlt-slide-photo__caption">* Video inauguration “Best Design” in Italy.</div> -->
 											<div class="vlt-slide-photo__particle vlt-fade-in-left--small negative-z-index"
 												style="right: -40px; top: -40px; width: 290px; transition-delay: 1.2s;"><img
 													src='main/img/root/plus-light-pattern.png' alt=""></div>
@@ -673,42 +462,41 @@
 					</div>
 				</div>
 			</div>
-			<!--Testimonials-->
 			<!--Section-->
 
 			<!--Contact-->
-			<!--Section-->
 			<div class="vlt-section pp-scrollable" data-anchor="Contact" data-brightness="dark">
 				<div class="vlt-section__vertical-align">
 					<div class="vlt-section__content">
 						<!--Ken Burn Effect-->
-						<div class="vlt-section__ken-burn-background"><img src='main/img/attachment-05.jpg' alt="">
+						<div class="vlt-section__ken-burn-background"><img src='main/img/contact.png' alt="" style="filter: blur(8px) brightness(40%);">
 						</div>
 						<div class="container contactslide">
 							<div class="row">
 								<div class="col-lg-5 offset-lg-1">
-									<!--Animated Block-->
 									<div class="vlt-animated-block" style="animation-delay:0s; animation-duration:700ms;">
-										<h1 class="has-white-color">Contact</h1>
+										<h1 class="has-white-color">Contact Us:</h1>
 										<div class="vlt-gap-20"></div>
-										<p class="has-white-color">If you have any questions or concerns, please feel free to reach out
-											to
-											us.
-										</p>
+										<p class="has-white-color">Got questions?<br> We''ll be there for you! Get in touch with us via - </p>
 										<div class="vlt-gap-50"></div>
 										<div class="has-white-color">
 											<h6 class="vlt-display-1 has-gray-color">Email:</h6>
 											<div class="vlt-gap-5"></div><a
-												href="mailto:scmpstme.techcomm@gmail.com">scmpstme.techcomm@gmail.com</a>
+												href="mailto:fest.taqneeq@gmail.com">fest.taqneeq@gmail.com</a>
 										</div>
 										<div class="vlt-gap-30"></div>
 										<div class="has-white-color">
 											<h6 class="vlt-display-1 has-gray-color">Phone:</h6>
-											<div class="vlt-gap-5"></div><a href="tel:+919619912881">(+91) 961 991 2881</a>
+											<div class="vlt-gap-5"></div><a href="tel:+919167519809">(+91) 91675 19809</a>
+										</div>
+                    <div class="vlt-gap-30"></div>
+                    <div class="has-white-color">
+											<h6 class="vlt-display-1 has-gray-color">Whatsapp:</h6>
+											<div class="vlt-gap-5"></div><a
+												href="https://wa.me/+919004005561">https://wa.me/+919004005561</a>
 										</div>
 										<div class="vlt-gap-40"></div><a class="vlt-btn vlt-btn--secondary"
-											href="https://goo.gl/maps/grJYBayzb69zTVxd8" target="_blank"><span class="vlt-btn__text">Get
-												direction</span><span class="vlt-btn__icon vlt-btn__icon--right"><svg
+											href="https://goo.gl/maps/grJYBayzb69zTVxd8" target="_blank"><span class="vlt-btn__text">Where are we located?</span><span class="vlt-btn__icon vlt-btn__icon--right"><svg
 													xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
 													stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
 													class="feather feather-map-pin">
@@ -723,54 +511,55 @@
 									<div class="vlt-gap-30"></div>
 									<div class="vlt-gap-50"></div>
 									<div class="vlt-animated-block" style="animation-delay:100ms; animation-duration:700ms;">
-										<h5 class="has-white-color">Join us on our
-											<span class="has-first-color">social platforms</span>
+										<h5 class="has-white-color">
+                      Stay Connected with Us -
 										</h5>
 										<div class="vlt-gap-40"></div>
+                    <!--Animated Block-->
+										<div class="vlt-animated-block" style="animation-delay:300ms;    animation-duration:700ms;">
+											<!--Award Item-->
+											<div class="vlt-award-item">
+												<div class="vlt-award-item__logo"><a href="https://instagram.com/taqneeqfest?utm_medium=copy_link"><img
+															src='main/img/icons/instagram.png' alt="Innovative ideas"></a>
+												</div>
+												<div class="vlt-award-item__content">
+													<a href="https://instagram.com/taqneeqfest?utm_medium=copy_link">
+														<h6 class="has-white-color">Instagram</h6>
+													</a>
+												</div>
+											</div>
+										</div>
+
+                    <div class="vlt-gap-30"></div>
+                    <!--Animated Block-->
 										<div class="vlt-animated-block" style="animation-delay:100ms; animation-duration:700ms;">
 											<!--Award Item-->
 											<div class="vlt-award-item">
-												<div class="vlt-award-item__logo"><a
-														href="https://www.youtube.com/channel/UCvu11QwUknwd02pQ4Lv6sTA/featured"><img
-															src='main/img/youtube.png' alt="Honorable mension"></a>
+												<div class="vlt-award-item__logo">
+                          <a href="https://www.youtube.com/channel/UC8ZivFUH8eR848Pv-Uljlpw">
+                            <img src='main/img/icons/youtube.jpg' alt="Honorable mension">
+                          </a>
 												</div>
 												<div class="vlt-award-item__content">
-													<a href="https://www.youtube.com/channel/UCvu11QwUknwd02pQ4Lv6sTA/featured">
+													<a href="https://www.youtube.com/channel/UC8ZivFUH8eR848Pv-Uljlpw">
 														<h6 class="has-white-color">YouTube</h6>
 													</a>
-
 												</div>
 											</div>
 										</div>
-										<div class="vlt-gap-30"></div>
-										<!--Animated Block-->
-										<div class="vlt-animated-block" style="animation-delay:300ms; animation-duration:700ms;">
-											<!--Award Item-->
-											<div class="vlt-award-item">
-												<div class="vlt-award-item__logo"><a href="https://www.instagram.com/techcommmpstme/"><img
-															src='main/img/instagram.png' alt="Innovative ideas"></a>
-												</div>
-												<div class="vlt-award-item__content">
-													<a href="https://www.instagram.com/techcommmpstme/">
-														<h6 class="has-white-color">Instagram</h6>
-													</a>
-
-												</div>
-
-											</div>
-										</div>
+										
+										
 										<div class="vlt-gap-40"></div>
 										<div class="vlt-animated-block" style="animation-delay:100ms; animation-duration:700ms;">
 											<!--Award Item-->
 											<div class="vlt-award-item">
-												<div class="vlt-award-item__logo"><a href="https://www.facebook.com/Tech.mpstme/"><img
-															src='main/img/facebook.png' alt="Honorable mension"></a>
+												<div class="vlt-award-item__logo"><a href="https://www.linkedin.com/company/taqneeqfest"><img
+															src='main/img/icons/linkedin.png' alt="Honorable mension"></a>
 												</div>
 												<div class="vlt-award-item__content">
-													<a href="https://www.facebook.com/Tech.mpstme/">
-														<h6 class="has-white-color">Facebook</h6>
+													<a href="https://www.linkedin.com/company/taqneeqfest">
+														<h6 class="has-white-color">LinkedIn</h6>
 													</a>
-
 												</div>
 											</div>
 										</div>
@@ -803,9 +592,9 @@
 			</div>
 		</footer>
 	</main>
+
 	<!--Libs-->
 	<script src='main/vendors/jquery-3.5.1.min.js'></script>
-  
 	<script src='main/scripts/vlt-plugins.min.js'></script>
 	<script src='main/scripts/vlt-helpers.js'></script>
 	<script src='main/scripts/vlt-controllers.min.js'></script>

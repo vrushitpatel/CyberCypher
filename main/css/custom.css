@@ -1,3 +1,13 @@
+@font-face {
+    font-family: InfynyteDysplay;
+    src: url("../fonts/InfynyteDysplay.otf") format("opentype");
+}
+
+@font-face {
+    font-family: InfynyteDysplaySharp;
+    src: url("../fonts/InfynyteDysplaySharp.otf") format("opentype");
+}
+
 .vlt-custom--8131 {
   bottom: -250px;
   left: -200px;
@@ -138,10 +148,10 @@
 
 #cta {
   display: flex;
-  padding: 10px 45px;
+  padding: 7px 50px;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
-  font-size: 40px;
+  font-size: 22px;
   color: white;
   background: #0c0a52;
   transition: 1s;
@@ -168,7 +178,7 @@
   margin-right: 45px;
 }
 
-span {
+#cta span {
   transform: skewX(15deg);
 }
 
@@ -398,3 +408,12 @@ path.two {
   margin-left:75px;
 }
 /* clock :end */
+/* logo */
+.white{
+  background-color: white;
+  width: 125px;
+  /* height: 800px; */
+}
+.media50{
+  margin-top:50px;
+}
