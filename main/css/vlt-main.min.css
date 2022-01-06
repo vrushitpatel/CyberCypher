@@ -114,6 +114,10 @@
 .has-first-color {
   color: var(--p1);
 }
+.prize{
+    font-weight: bold !important;
+    font-size: 1em;
+}
 .has-first-background-color {
   background-color: var(--p1);
 }
@@ -734,7 +738,7 @@ textarea:focus::-webkit-input-placeholder {
   box-shadow: none;
 }
 .is-dark .vlt-navbar .vlt-navbar-background {
-  background-color: #fff;
+  background-color: transparent;
 }
 .vlt-navbar--fixed {
   position: fixed;
@@ -783,6 +787,13 @@ textarea:focus::-webkit-input-placeholder {
       max-height: 70px;
       margin-top: -15px;
     }
+    .is-dark .vlt-navbar .vlt-navbar-background {
+  background-color: #fff;
+}
+}
+.cat{
+    font-size: 20px;
+    font-weight: bold;
 }
 .is-light .vlt-navbar .vlt-navbar-logo img.black {
   display: none;
@@ -1715,7 +1726,7 @@ body .pp-scrollable {
   margin-bottom: 1.875rem;
 }
 .vlt-counter-up {
-  font-size: 7.5rem;
+  font-size: 5.5rem;
   font-weight: 700;
   line-height: 1;
   letter-spacing: -0.02em;
@@ -2019,7 +2030,8 @@ body .pp-scrollable {
   margin-bottom: 0.9375rem;
 }
 .vlt-services__text {
-  margin-bottom: 0;
+
+  font-weight: bold;
 }
 .vlt-services__link {
   margin-top: 1.25rem;
