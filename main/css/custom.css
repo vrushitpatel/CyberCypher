@@ -1,11 +1,11 @@
 @font-face {
     font-family: InfynyteDysplay;
-    src: url("../fonts/InfynyteDysplay.otf") format("opentype");
+    src: url("../fonts/InfynyteDysplay.woff") format("woff"), url("../fonts/InfynyteDysplay.otf") format("opentype");
 }
 
 @font-face {
     font-family: InfynyteDysplaySharp;
-    src: url("../fonts/InfynyteDysplaySharp.otf") format("opentype");
+     src: url("../fonts/InfynyteDysplaySharp.woff") format("woff"), url("../fonts/InfynyteDysplaySharp.otf") format("opentype");
 }
 
 .vlt-custom--8131 {
