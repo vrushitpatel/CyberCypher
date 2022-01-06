@@ -174,7 +174,7 @@
   background: #0c0a52;
   transition: 1s;
   box-shadow: 6px 6px 0 black;
-  transform: skewX(-15deg);
+  /* transform: skewX(-15deg); */
 }
 
 #cta:focus {
@@ -196,9 +196,10 @@
   margin-right: 45px;
 }
 
+/* 
 #cta span {
   transform: skewX(15deg);
-}
+} */
 
 span:nth-child(2) {
   width: 20px;

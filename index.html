@@ -109,13 +109,17 @@
       }
       .padd15mob{
         padding: 15px 0 !important;
-      }  
+      }
+      .disnon-mob{
+        display: none;
+      }
+      .paddmob {
+        padding: 0 0.5rem;
+      }
     }
-
     .text-c{
       text-align: center;
     }
-
     .god-code {
       position: relative;
       top: 50%;
@@ -123,12 +127,17 @@
       transform: translate(-50%, 50%)
     }
 
-  </style>
+  @media  (min-width: 1200px) {
+    .landingcontainer {
+      max-width: 1080px;
+    }
+  }
 
+  </style>
 
 </head>
 
-<body class=" animsition">
+<body class="animsition">
 	<!--Header-->
 	<header class="vlt-header">
 		<div class="vlt-navbar vlt-navbar--main vlt-navbar--fixed">
@@ -137,10 +146,8 @@
 				<div class="vlt-navbar-inner--left">
 					<!--Logo--><a class="vlt-navbar-logo" href="#Home">
 						<!-- <h2 class="black">Cyber Cypher</h2> -->
-
 						<!-- <img class="black" src='main/img/root/logo-black.png' alt="Mikael"> -->
-            <img
-							src='main/img/cc-logo.png' alt="Cyber Cypher" style="filter: drop-shadow(6px 6px 7px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 5px rgba(255, 255, 255, 0.2));" > 
+            <img src='main/img/cc-logo.png' alt="Cyber Cypher" >
 					</a>
 					<!-- Contacts
 					<nav class="vlt-navbar-contacts d-none d-md-block">
@@ -189,10 +196,8 @@
 				<li data-menuanchor="Awards"><a href="#Awards">What suits you?</a></li>
 				<!-- <li data-menuanchor="Portfolio"><a href="#Portfolio">Portfolio</a></li> -->
 				<li data-menuanchor="NMIMS"><a href="#NMIMS">About NMIMS</a></li>
-        <li data-menuanchor="Creators"><a href="#Creators">About the Creators</a></li>
-				<!-- <li data-menuanchor="Testimonials"><a href="#Testimonials">Testimonials</a></li>
-				<li data-menuanchor="Blog"><a href="#Blog">Blog</a></li> -->
-				<li data-menuanchor="Contact"><a href="#Contact">Contact</a></li>
+        <li data-menuanchor="Creators"><a href="#Creators">Brought to you by...</a></li>
+				<li data-menuanchor="Contact"><a href="#Contact">Contact Us</a></li>
 			</ul>
 		</nav>
 		<div class="vlt-offcanvas-menu__footer">
@@ -209,9 +214,6 @@
 	</div>
 	<!--Site Overlay-->
 	<div class="vlt-site-overlay"></div>
-	<!--Fixed Socials-->
-	<!-- <div class="vlt-fixed-socials"><a href="#" target="_blank">Fb.</a><a href="#" target="_blank">Bē.</a><a href="#"
-			target="_blank">Tw.</a><a href="#" target="_blank">In.</a></div> -->
 	<!--Main-->
 	<main class="vlt-main">
 		<!--Fullpage Slider-->
@@ -243,17 +245,16 @@
                     <div class="vlt-animated-block" style="animation-delay:0s; animation-duration:700ms;">
                       <h1 class="vlt-large-heading has-white-color god-code-mob text-c-mob no-margin-left" style="margin-left: -20px; font-family: InfynyteDysplay;" >Cyber Cypher</h1>
                       <div class="gap-3"></div>
-                      <h5 class="vlt-display-1 has-white-color god-code-mob text-c-mob no-margin-left padd15mob" style="font-size: 1.1rem; margin-left: 10px; display: inline-block !important;"> 24 HRS Hackathon : NMIMS, MPSTME </h5>
+                      <h5 class="vlt-display-1 has-white-color god-code-mob text-c-mob no-margin-left padd15mob" style="font-size: 1.1rem; margin-left: -10px; display: inline-block !important;letter-spacing: 0.075rem;">NMIMS's 24-HOUR HACKATHON</h5>
                       <div class="gap-4"></div>
-                      <div class="row">
+                      <div class="row" style="margin-left: -18px !important;">
                         <div id="counter">
                           <div class="vlt-gap-20--sm"></div>
                         </div>
                         <!--Counter end-->
-
                         <div class="wrapper">
                           <a id="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdE4RIXhxhAzzUB4wfZ5IiBxk3Y-cdSGM29VoGZt9Zv52wNcg/viewform" target="_blank">
-                            <h5 style="color: #fff; letter-spacing: 0.075rem; padding: 2px 0; transform: skew(10deg);">REGISTER</h5>
+                            <h5 style="color: #fff; letter-spacing: 0.075rem; padding: 2px 0;">REGISTER</h5>
                             <span>
                               <svg width="42px" height="36px" viewBox="0 0 66 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -274,7 +275,6 @@
               </div>
             </div>
           </div>
-
 				</div>
 			</div>
 			<!--Services-->
@@ -298,30 +298,28 @@
 										<div class="vlt-counter-up" data-ending-number="2" data-animation-speed="2000" data-delimiter="">
 											<span class="counter">0</span>
 										</div>
-										<div class="vlt-gap-40"></div>
+										<div class="vlt-gap-20"></div>
 										<h6>Problem <br>Statements</h6>
 									</div>
+                  <div class="vlt-gap-20"></div>
                   <div class="vlt-animated-block" style="animation-delay:0s; animation-duration:700ms;">
 										<!--Counter Up-->
 										<div class="vlt-counter-up prises" data-ending-number="50" data-animation-speed="2000" data-delimiter="">
 											<span class="counter">0</span>k
 										</div>
 										<div class="vlt-gap-20"></div>
-										<h6 style="margin-left:10px;">Prizes</h6>
+										<h6 style="margin-left:10px;">To Win</h6>
 									</div>
-                  
 								</div>
                 
 								<div class="col-lg-8 col-md-12">
 									<!--Animated Block-->
 									<div class="vlt-animated-block" style="animation-delay:100ms; animation-duration:700ms;">
-										<h4>Be it developing or exercising your technical skills, handling pressure, or team-work abilities, <span
-												class="has-first-color">Cyber Cypher is the platform for you!
-											</span></h4>
+										<h4>
+                      Be it developing or exercising your technical skills, handling pressure, or team-work abilities. <span class="has-first-color"><br>Cyber Cypher is the platform for you!
+											</span>
+                    </h4>
 									</div><br>
-                  
-                                    <p class="vlt-services__text">The certificates every participant is awarded add a lot of value to your <span class="has-first-color"><strong>CV</strong></span>, too…
-                                    </p>
 									<div class="vlt-gap-50"></div>
 									<div class="row" id="services">
 										<div class="col-md-6">
@@ -329,8 +327,7 @@
 											<div class="vlt-animated-block" style="animation-delay:200ms; animation-duration:700ms;text-align:justify;">
 												<!--Services-->
 												<div class="vlt-services">
-													<h5 class="vlt-services__title">Endless Opportunities
-													</h5>
+													<h5 class="vlt-services__title">Endless Opportunities</h5>
 													<p class="vlt-services__text">Put your coding prowess to the test, learn something new, build new connections, or just experience a high-speed hackathon in session - the event might end in 24 hours but the opportunities are endless!
 													</p>
 												</div>
@@ -342,9 +339,8 @@
 											<div class="vlt-animated-block" style="animation-delay:300ms; animation-duration:700ms;text-align:justify;">
 												<!--Services-->
 												<div class="vlt-services">
-													<h5 class="vlt-services__title">Build and Innovate
-													</h5>
-													<p class="vlt-services__text">Cyber Cypher provides a platform that knows no bounds. Your one-of-a-kind creativity and tech powers are the only things that decide how far you’re willing to go with your ideas and their implementations.
+													<h5 class="vlt-services__title">Build and Innovate</h5>
+													<p class="vlt-services__text">Cyber Cypher provides a platform that knows no bounds. Your one-of-a-kind creativity and tech prowess are the only things that decide how far you’re willing to go with your ideas and their implementations.
 													</p>
 												</div>
 											</div>
@@ -353,14 +349,7 @@
 										
 										<div class="col-md-12">
 											<div class="vlt-animated-block" style="animation-delay:500ms; animation-duration:700ms;">
-
 												<div class="vlt-services">
-													<!-- <h5 class="vlt-services__title">Miscellaneous
-													</h5> -->
-													<!-- <p class="vlt-services__text">The certificates every participant is awarded add a lot of value to your <span
-												class="has-first-color"><strong>CV</strong></span>, too…
-													</p> -->
-                          
 												</div>
 											</div>
 										</div>
@@ -391,28 +380,29 @@
 									<div class="vlt-slide-photo">
 										<div class="vlt-slide-photo__inside"><img src='main/img/apply.jpg' alt="">
 										</div>
-										<div class="vlt-slide-photo__particle vlt-fade-in-bottom--small has-border-radius has-box-shadow"
-											style="top: -50px; right: -40px; width: 100px; transition-delay: 300ms;"><img
-												src='main/img/eth2.png' alt=""></div>
-										<div class="vlt-slide-photo__particle vlt-fade-in-bottom--small has-border-radius has-box-shadow"
-											style="top: 40px; left: -30px; width: 80px; transition-delay: 600ms;"><img src='main/img/btc.png'
-												alt='main/img/btc.png'></div>
-										<div class="vlt-slide-photo__particle vlt-fade-in-left--small has-border-radius has-box-shadow"
-											style="left: 30px; bottom: -50px; width: 100px; transition-delay: 900ms;"><img
-												src='main/img/dssg.png' alt=""></div>
+										<div class="vlt-slide-photo__particle vlt-fade-in-bottom--small has-border-radius has-box-shadow" style="top: -50px; right: -40px; width: 100px; transition-delay: 300ms;">
+                      <img src='main/img/icon-web-01.png' alt="">
+                    </div>
+										<div class="vlt-slide-photo__particle vlt-fade-in-bottom--small has-border-radius has-box-shadow" style="top: 40px; left: -30px; width: 80px; transition-delay: 600ms;">
+                      <img src='main/img/icon-web-02.png' alt="">
+                    </div>
+										<div class="vlt-slide-photo__particle vlt-fade-in-left--small has-border-radius has-box-shadow" style="left: 30px; bottom: -50px; width: 100px; transition-delay: 900ms;">
+                      <img src='main/img/icon-web-03.png' alt="">
+                    </div>
 									</div>
 								</div>
 								<div class="col-lg-6 offset-lg-1 howtoapply">
 									<!--Animated Block-->
 									<div class="vlt-animated-block" style="animation-delay:100ms; animation-duration:700ms;text-align:justify;">
-										<h4>What Suits You Best:</h4>
+										<h4>What suits you best? - </h4>
 										<div class="vlt-gap-20"></div>
+                    <li>We’re opening up this portal to a world of innovation and opportunities for you at a nominal <span class="has-first-color prize">participation fee of ₹ 195</span>.</li>
+                    <br>
 										<li><i class="fas fa-check"></i> <span class="has-first-color cat"> Category 1 - Elementary Level</span> - Use the absolute fundamentals of programming to develop your solutions for an elementary level problem statement, which allows you to explore the bounds of your skill-sets all while ensuring you’re only expected to make use of the very basics to dazzle everyone!</li>
                     <br>
-                    <li><i class="fas fa-check"></i> <span class="has-first-color cat"> Category 2 - Advanced Level</span> - Focusing on the data sciences, you can use any and all softwares you’re familiar with to develop AI-based technologies as a solution to a problem statement that’ll test your documentation-reading abilities as well as Googling prowess alike.</li>
+                    <li><i class="fas fa-check"></i> <span class="has-first-color cat"> Category 2 - Advanced Level</span> - Focusing on the data sciences, you can use any and all softwares you’re familiar with to develop AI-based technologies as a solution to a problem statement that’ll put your concept application abilities to the test.</li>
 										<div class="vlt-gap-20"></div>
                     <div class="vlt-gap-20"></div>
-										<li>We’re opening up this portal to a world of innovation and opportunities for you at a nominal participation fee of<span class="has-first-color prize"> ₹ 195</span>.</li>
 									</div>
 								</div>
 							</div>
@@ -436,31 +426,22 @@
 								<div class="col-lg-6" id="awards">
 									<!--Animated Block-->
 									<div class="vlt-animated-block" style="animation-delay:0s; animation-duration:700ms;text-align:justify;">
-										<h4>About <span class="has-first-color">Event </span></h4>
+										<h4>About <span class="has-first-color">The Event</span></h4>
 										<div class="vlt-gap-20"></div>
 										<p>Cyber Cypher is a 24-hour hackathon that aims to provide a platform to both, budding and experienced coders alike, to open up avenues for them that’ll allow a higher understanding and appreciation for the myriad possibilities that lay unlocked at their fingertips by being a part of such a dynamic field of computer sciences.</p>
 									</div>
-									<div class="vlt-gap-50"></div>
 									<!--Animated Block-->
-									<div class="vlt-animated-block" style="animation-delay:100ms; animation-duration:700ms;text-align:justify;" >
-										<!--Award Item-->
-										<div class="vlt-award-item">
-											<div class="vlt-award-item__content">
-												<h6>NMIMS MPSTME-</h6>
-												<p>Ranked 16th among the numerous private engineering colleges in India, the Mukesh Patel School of Technology Management and Engineering, a constituent of SVKM’s NMIMS, was essentially established to serve the need of creating an innovative and integrated space for technology education interspersed with sound management practises that converged with changing industry as well as societal needs.</p>
-											</div>
-										</div>
-									</div>
 									<div class="vlt-gap-30"></div>
 								</div>
 								<div class="col-lg-4 offset-lg-1">
 									<div class="vlt-animated-block" style="animation-delay:400ms; animation-duration:700ms;">
 										<div class="vlt-slide-photo">
-											<div class="vlt-slide-photo__inside"><img src='main/img/nmims.jpg' alt="">
+											<div class="vlt-slide-photo__inside">
+                        <img src='main/img/IT-Lab.jpg' alt="">
 											</div>
-											<div class="vlt-slide-photo__particle vlt-fade-in-left--small negative-z-index"
-												style="right: -40px; top: -40px; width: 290px; transition-delay: 1.2s;"><img
-													src='main/img/root/plus-light-pattern.png' alt=""></div>
+											<div class="vlt-slide-photo__particle vlt-fade-in-left--small negative-z-index" style="right: -40px; top: -40px; width: 290px; transition-delay: 1.2s;">
+                        <img src='main/img/root/plus-light-pattern.png' alt="">
+                      </div>
 										</div>
 									</div>
 								</div>
@@ -486,9 +467,10 @@
 								<div class="col-lg-7" id="Taqneeq">
 									<!--Animated Block-->
 									<div class="vlt-animated-block" style="animation-delay:0s; animation-duration:700ms;text-align:justify;">
-										<h4>About <span class="has-first-color">Tech Creators </span></h4>
+										<h4><span class="has-first-color">Event brought to you by - </span></h4>
 										<div class="vlt-gap-20"></div>
-										<p> The Technical Committee is the tech and digital arm of the Students' Council. We're the ones who provide experience of excitement, enthusiasm and a platform to showcase one’s skills. From industrial visits to internship fairs, we strive for the holistic development of our members and event participants. We collaborate with student bodies from all around Mumbai to pull off some trailblazing events. Tech Comm is for those that want a headstart in their engineering journey by developing their technical aptitude.<span style="font-weight:bolder; text-align:left;"> THE TECHNICAL COMMITTEE, </span> It's not that we use tech, we live tech.</p>
+                    <h6 class="has-first-color">Technical Committee</h6>
+										<p> The Technical Committee is the tech and digital arm of the Students' Council. We're the ones who provide experience of excitement, enthusiasm and a platform to showcase one’s skills. From industrial visits to internship fairs, we strive for the holistic development of our members and event participants.<span style="font-weight:bolder; text-align:left;"> THE TECHNICAL COMMITTEE, </span> It's not that we use tech; we live tech.</p>
 									</div>
 									<div class="vlt-gap-50"></div>
 									<!--Animated Block-->
@@ -496,7 +478,7 @@
 										<!--Award Item-->
 										<div class="vlt-award-item">
 											<div class="vlt-award-item__content">
-												<h6 class="has-first-color">Student Council</h6>
+												<h6 class="has-first-color">The Students' Council</h6>
 												<p>MPSTME, aiming for its students' holistic development in tandem with their academic training, has a diverse and widely inclusive Students' Council. Employing its constituents' immense potential and passion, this student body proficiently caters to the students' co-curricular and extracurricular requirements. This is done through its many sub-committees and departments, allowing for a more up-front and hands-on experience in various fields and avenues, ranging from sports, art, and social work to finance, technology, and research.</p>
 											</div>
 										</div>
@@ -506,11 +488,16 @@
 								<div class="col-lg-4 offset-lg-1">
 									<div class="vlt-animated-block" style="animation-delay:400ms; animation-duration:700ms;">
 										<div class="vlt-slide-photo">
-											<div class="vlt-slide-photo__inside"><img src='main/img/nmims.jpg' alt="">
+											<div class="vlt-slide-photo__inside">
+                        <img src='main/img/TechCom-Logo.png' alt="" style="margin-top: 2.75rem;">
 											</div>
-											<div class="vlt-slide-photo__particle vlt-fade-in-left--small negative-z-index"
-												style="right: -40px; top: -40px; width: 290px; transition-delay: 1.2s;"><img
-													src='main/img/root/plus-light-pattern.png' alt=""></div>
+                      <div class="vlt-slide-photo__inside">
+                        <img src='main/img/SC-Logo.png' alt="" style="max-width: 10rem;
+    margin: 0 0 0 6.5rem;">
+											</div>
+											<div class="vlt-slide-photo__particle vlt-fade-in-left--small negative-z-index" style="right: -40px; top: -40px; width: 290px; transition-delay: 1.2s;">
+                        <img src='main/img/root/plus-light-pattern.png' alt="">
+                      </div>
 										</div>
 									</div>
 								</div>
@@ -530,11 +517,11 @@
 						</div>
 						<div class="container contactslide">
 							<div class="row">
-								<div class="col-lg-5 offset-lg-1">
+								<div class="col-lg-5 offset-lg-1" style="padding: 0 2rem">
 									<div class="vlt-animated-block" style="animation-delay:0s; animation-duration:700ms;">
-										<h1 class="has-white-color">Contact Us:</h1>
+										<h1 class="has-white-color">Contact Us</h1>
 										<div class="vlt-gap-20"></div>
-										<h5 class="has-white-color">Got questions?<br> We''ll be there for you! <br> Get in touch with us via - </h5>
+										<!-- <h5 class="has-white-color">Get in touch with us</h5> -->
 										<div class="vlt-gap-50"></div>
 										<div class="has-white-color">
 											<h6 class="vlt-display-1 has-gray-color">Email:</h6>
@@ -548,7 +535,7 @@
 										</div>
                     <div class="vlt-gap-30"></div>
                     <div class="has-white-color">
-											<h6 class="vlt-display-1 has-gray-color">Whatsapp:</h6>
+											<h6 class="vlt-display-1 has-gray-color">WhatsApp:</h6>
 											<div class="vlt-gap-5"></div><a
 												href="https://wa.me/+919004005561">https://wa.me/+919004005561</a>
 										</div>
@@ -563,21 +550,24 @@
 									</div>
 									<div class="vlt-gap-70--sm"></div>
 								</div>
-								<div class="col-lg-5 offset-lg-1">
+								<div class="col-lg-5 offset-lg-1" style="padding: 0 2rem">
 									<!--Animated Block-->
-									<div class="vlt-gap-30"></div>
-									<div class="vlt-gap-50"></div>
+                  <div class="vlt-gap-30"></div>
+									<div class="vlt-gap-50 disnon-mob"></div>
+									<div class="vlt-gap-50 disnon-mob"></div>
 									<div class="vlt-animated-block" style="animation-delay:100ms; animation-duration:700ms;">
 										<h5 class="has-white-color">
                       Stay Connected with Us -
 										</h5>
 										<div class="vlt-gap-40"></div>
                     <!--Animated Block-->
-										<div class="vlt-animated-block" style="animation-delay:300ms;    animation-duration:700ms;">
+										<div class="vlt-animated-block paddmob" style="animation-delay:300ms;    animation-duration:700ms;">
 											<!--Award Item-->
 											<div class="vlt-award-item">
-												<div class="vlt-award-item__logo"><a href="https://instagram.com/taqneeqfest?utm_medium=copy_link"><img
-															src='main/img/icons/instagram.png' alt="Innovative ideas"></a>
+												<div class="vlt-award-item__logo">
+                          <a href="https://instagram.com/taqneeqfest?utm_medium=copy_link">
+                            <img src='main/img/icons/instagram.png' alt="Innovative ideas">
+                          </a>
 												</div>
 												<div class="vlt-award-item__content">
 													<a href="https://instagram.com/taqneeqfest?utm_medium=copy_link">
@@ -589,7 +579,7 @@
 
                     <div class="vlt-gap-30"></div>
                     <!--Animated Block-->
-										<div class="vlt-animated-block" style="animation-delay:100ms; animation-duration:700ms;">
+										<div class="vlt-animated-block paddmob" style="animation-delay:100ms; animation-duration:700ms;">
 											<!--Award Item-->
 											<div class="vlt-award-item">
 												<div class="vlt-award-item__logo">
@@ -607,7 +597,7 @@
 										
 										
 										<div class="vlt-gap-40"></div>
-										<div class="vlt-animated-block" style="animation-delay:100ms; animation-duration:700ms;">
+										<div class="vlt-animated-block paddmob" style="animation-delay:100ms; animation-duration:700ms;">
 											<!--Award Item-->
 											<div class="vlt-award-item">
 												<div class="vlt-award-item__logo"><a href="https://www.linkedin.com/company/taqneeqfest"><img
