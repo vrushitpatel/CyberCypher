@@ -2062,8 +2062,8 @@ body .pp-scrollable {
  #awards{
     text-align: center !important;
  }
- .vlt-slide-photo__inside{
-     display: none;
+ .vlt-slide-photo__inside {
+     display: none !important;
  }
 }
 .vlt-slide-photo__caption {

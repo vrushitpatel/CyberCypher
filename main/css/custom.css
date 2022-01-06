@@ -63,14 +63,15 @@
     display: none;
   }
 
-  div.col-lg-5.offset-lg-1.howtoapply > div > li > i {
+  .howtoapply > div > li > i {
     display: none;
   }
 
-  div.col-lg-5.offset-lg-1.howtoapply > div > li > span {
+  .howtoapply > div > li > span {
     margin-left: 0px;
   }
 }
+
 
  body > div.vlt-offcanvas-menu > div.vlt-offcanvas-menu__header > a 
 {
