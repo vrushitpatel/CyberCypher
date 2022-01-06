@@ -58,7 +58,24 @@
     right: -50vw;
     width: 100vw;
   }
+
+  .vlt-fullpage-slider-numbers {
+    display: none;
+  }
+
+  div.col-lg-5.offset-lg-1.howtoapply > div > li > i {
+    display: none;
+  }
+
+  div.col-lg-5.offset-lg-1.howtoapply > div > li > span {
+    margin-left: 0px;
+  }
 }
+
+ body > div.vlt-offcanvas-menu > div.vlt-offcanvas-menu__header > a 
+{
+  margin-top:0;
+} 
 
 .vlt-custom--1259 {
   top: -20px;
@@ -416,4 +433,8 @@ path.two {
 }
 .media50{
   margin-top:50px;
+}
+.prises{
+  font-size: 5rem;
+  margin-top:20px;
 }
