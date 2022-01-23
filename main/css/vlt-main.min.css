@@ -393,7 +393,7 @@ a:hover {
 .h1,
 .h2,
 .h3,
-.h4,
+
 .h5,
 .h6,
 h1,
@@ -2081,6 +2081,7 @@ body .pp-scrollable {
 .vlt-slide-photo__particle img {
   display: block;
   margin: 0 auto;
+  z-index: -9999;
 }
 .vlt-slide-photo__particle.has-border-radius {
   border-radius: 8px;
