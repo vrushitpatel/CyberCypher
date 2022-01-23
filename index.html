@@ -21,119 +21,121 @@
 	<link rel="stylesheet" href='main/css/vlt-main.min.css'>
 	<!--Custom-->
 	<link rel="stylesheet" href='main/css/custom.css'>
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
 	<link rel="stylesheet" href='main/css/howto.css'>
+	<link rel="stylesheet" href='main/css/newslides.css'>
 
-  <style>
-    .bg {
-      width:100%
-      height: 100%;
-      animation:slide 3s ease-in-out infinite alternate;
-      background-image: linear-gradient(-60deg, #0c41aa 50%, #1349b5 50%);
-      bottom:0;
-      left:-50%;
-      opacity:.5;
-      position:fixed;
-      right:-50%;
-      top:0;
-      z-index:-1;
-    }
+	<style>
+		.bg {
+			width: 100% height: 100%;
+			animation: slide 3s ease-in-out infinite alternate;
+			background-image: linear-gradient(-60deg, #0c41aa 50%, #1349b5 50%);
+			bottom: 0;
+			left: -50%;
+			opacity: .5;
+			position: fixed;
+			right: -50%;
+			top: 0;
+			z-index: -1;
+		}
 
-    .bg2 {
-      animation-direction:alternate-reverse;
-      animation-duration:4s;
-    }
+		.bg2 {
+			animation-direction: alternate-reverse;
+			animation-duration: 4s;
+		}
 
-    .bg3 {
-      animation-duration:5s;
-    }
+		.bg3 {
+			animation-duration: 5s;
+		}
 
-    @keyframes slide {
-      0% {
-        transform:translateX(-25%);
-      }
-      100% {
-        transform:translateX(25%);
-      }
-    }
+		@keyframes slide {
+			0% {
+				transform: translateX(-25%);
+			}
+			100% {
+				transform: translateX(25%);
+			}
+		}
 
-    .content {
-      width: 100%;
-      height: 100%;
-      position: relative;
-    }
+		.content {
+			width: 100%;
+			height: 100%;
+			position: relative;
+		}
 
-    body .pp-scrollable {
-      overflow-y: auto;
-      overflow-x: hidden;
-    }
+		body .pp-scrollable {
+			overflow-y: auto;
+			overflow-x: hidden;
+		}
 
-    .gap-3{
-      height: 30px;  
-    }
+		.gap-3 {
+			height: 30px;
+		}
 
-    .gap-4{
-      height: 40px;
-    }
+		.gap-4 {
+			height: 40px;
+		}
 
-    @media only screen and (max-width: 768px) {
-      /* [class*="gap-"] {
+		@media only screen and (max-width: 768px) {
+			/* [class*="gap-"] {
         height: 0px;
       } */
 
-      .gap-3{
-        margin-top: -70px;  
-      }
-      .gap-4{
-        margin-top: -30px;
-      }
-      .god-code-mob {
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%)
-      }
-      .text-c-mob{
-        text-align: center;
-      }
-      .no-margin-left {
-        margin-left: 0 !important;
-      }
-      .wrapper {
-        margin-left: -2px;
-        width: 100%;
-      }
-      .sf-menu li {
-        text-align: center;
-        padding: 1rem !important;
-      }
-      .padd15mob{
-        padding: 15px 0 !important;
-      }
-      .disnon-mob{
-        display: none;
-      }
-      .paddmob {
-        padding: 0 0.5rem;
-      }
-    }
-    .text-c{
-      text-align: center;
-    }
-    .god-code {
-      position: relative;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, 50%)
-    }
+			.gap-3 {
+				margin-top: -70px;
+			}
+			.gap-4 {
+				margin-top: -30px;
+			}
+			.god-code-mob {
+				position: relative;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%)
+			}
+			.text-c-mob {
+				text-align: center;
+			}
+			.no-margin-left {
+				margin-left: 0 !important;
+			}
+			.wrapper {
+				margin-left: -2px;
+				width: 100%;
+			}
+			.sf-menu li {
+				text-align: center;
+				padding: 1rem !important;
+			}
+			.padd15mob {
+				padding: 15px 0 !important;
+			}
+			.disnon-mob {
+				display: none;
+			}
+			.paddmob {
+				padding: 0 0.5rem;
+			}
+		}
 
-  @media  (min-width: 1200px) {
-    .landingcontainer {
-      max-width: 1080px;
-    }
-  }
+		.text-c {
+			text-align: center;
+		}
 
-  </style>
+		.god-code {
+			position: relative;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, 50%)
+		}
+
+		@media (min-width: 1200px) {
+			.landingcontainer {
+				max-width: 1080px;
+			}
+		}
+	</style>
 
 </head>
 
@@ -147,7 +149,7 @@
 					<!--Logo--><a class="vlt-navbar-logo" href="#Home">
 						<!-- <h2 class="black">Cyber Cypher</h2> -->
 						<!-- <img class="black" src='main/img/root/logo-black.png' alt="Mikael"> -->
-            <img src='main/img/cc-logo.png' alt="Cyber Cypher" >
+						<img src='main/img/cc-logo.png' alt="Cyber Cypher" >
 					</a>
 					<!-- Contacts
 					<nav class="vlt-navbar-contacts d-none d-md-block">
@@ -197,6 +199,9 @@
 				<!-- <li data-menuanchor="Portfolio"><a href="#Portfolio">Portfolio</a></li> -->
 				<li data-menuanchor="NMIMS"><a href="#NMIMS">About NMIMS</a></li>
         <li data-menuanchor="Creators"><a href="#Creators">Brought to you by...</a></li>
+        <li data-menuanchor="ChiefGuests"><a href="#ChiefGuests">Chief Guests</a></li>
+        <li data-menuanchor="ChiefGuestsDS"><a href="#ChiefGuestsDS">Chief Guests DS</a></li>
+       <li data-menuanchor="ChiefGuestsPPS"><a href="#ChiefGuestsPPS">Chief Guests PPS</a></li>
 				<li data-menuanchor="Contact"><a href="#Contact">Contact Us</a></li>
 			</ul>
 		</nav>
@@ -507,6 +512,252 @@
 				</div>
 			</div>
 			<!--Section-->
+      <!--Cheif guests-->
+
+      <div class="vlt-section pp-scrollable" data-anchor="ChiefGuests" data-brightness="light">
+				<div class="vlt-section__vertical-align">
+					<div class="vlt-section__content">
+						<!--Particles-->
+						<div class="vlt-section__particles">
+							<div class="vlt-particle vlt-custom--2355 vlt-fade-in-left"
+								style="background-image: url('main/img/root/elipse-light.png'); animation-delay: 500ms;">
+							</div>
+						</div>
+						<div class="container">
+							<div class="row align-items-center">
+								<div class="col-lg-7" id="Taqneeq">
+									<!--Animated Block-->
+							
+									<!--Animated Block-->
+									<div class="vlt-animated-block bd-grid" style="animation-delay:100ms; animation-duration:700ms;text-align:justify;">
+								    <div class="profiles__container"> 
+                    <div class="profiles__content">
+                        <img src="main/img/guests/cg/lav.webp" alt="" class="profiles__img">
+                        <h3 class="profiles__title">Lav Chaturvedi</h3>
+                        <span class="profiles__category">Executive Director and CEO</span> <span class="profiles__category">Reliance Securities</span>
+                        <a href="https://www.linkedin.com/in/lav-chaturvedi-29183a4/" target="_blank"
+                            class="buttons profiles__button"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                  </div>
+                  <div class="profiles__container">
+                    <div class="profiles__content">
+                        <img src="main/img/guests/cg/prasanna.webp" alt="" class="profiles__img">
+                        <h3 class="profiles__title">Prasanna Lohar</h3>
+                        <span class="profiles__category">Vice-President Technology </span><span class="profiles__category">DCB Bank</span>
+                        <a href="https://www.linkedin.com/in/prasannalohar" target="_blank"
+                            class="buttons profiles__button"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+                <div class="profiles__container">
+                    <div class="profiles__content">
+                        <img src="main/img/guests/cg/vivek.webp" alt="" class="profiles__img" />
+                        <h3 class="profiles__title">Vivek Gupta</h3>
+                        <span class="profiles__category">EVP & HeadTechnology</span><span class="profiles__category"> CoinDCX.</span>
+                       <a href="https://www.linkedin.com/in/gviv/" target="_blank"
+                            class="buttons profiles__button"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+									</div>
+									<div class="vlt-gap-30"></div>
+								</div>
+								<div class="col-lg-4 offset-lg-1">
+									<div class="vlt-animated-block" style="animation-delay:400ms; animation-duration:700ms;">
+										<div class="vlt-slide-photo">
+											
+											<div class="vlt-slide-photo__particle vlt-fade-in-left--small negative-z-index" style="right: -40px; top: -40px; width: 290px; transition-delay: 1.2s;">
+                        <img src='main/img/root/plus-light-pattern.png' alt="">
+                      </div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+      <!--Data science  -->
+      <div class="vlt-section pp-scrollable" data-anchor="ChiefGuestsDS" data-brightness="light">
+				<div class="vlt-section__vertical-align">
+					<div class="vlt-section__content">
+						<!--Particles-->
+						<div class="vlt-section__particles">
+							<div class="vlt-particle vlt-custom--2355 vlt-fade-in-left"
+								style="background-image: url('main/img/root/elipse-light.png'); animation-delay: 500ms;">
+							</div>
+						</div>
+						<div class="container">
+							<div class="row align-items-center">
+								<div class="col-lg-7" id="Taqneeq">
+									<!--Animated Block-->
+				
+									<!--Animated Block-->
+									<div class="vlt-animated-block bd-grid" style="animation-delay:100ms; animation-duration:700ms;text-align:justify;" >
+								<div class="profiles__container ">
+                    <div class="profiles__content">
+                        <img src="main/img/guests/ds/pritesh.webp" alt="" class="profiles__img">
+                        <h3 class="profiles__title">Pritesh Jha</h3>
+                        <span class="profiles__category">Microsoft Hackathon 2nd Runner Up - Code Gladiators 2020 </span>
+                        <a href="https://www.linkedin.com/in/priteshjha27" target="_blank"
+                            class="buttons profiles__button"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+                <div class="profiles__container ">
+                    <div class="profiles__content">
+                        <img src="main/img/guests/ds/pragyan.webp" alt="" class="profiles__img">
+                        <h3 class="profiles__title">Pragyan Prakash</h3>
+                        <span class="profiles__category">Gauss Day Hackathon Winner | Yes Bank Datathon Winner</span>
+                        <a href="https://www.linkedin.com/in/pragyan-prakash-228637125/" target="_blank"
+                            class="buttons profiles__button"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+                <div class="profiles__container ">
+                    <div class="profiles__content">
+                        <img src="main/img/guests/ds/priyanshu.webp" alt="" class="profiles__img">
+                        <h3 class="profiles__title">Priyanshu Jain</h3>
+                        <span class="profiles__category">Senior Data Scientist</span><span class="profiles__category"> Gojek</span>
+                        <a href="https://www.linkedin.com/in/priyanshu-jain-19409319" target="_blank"
+                            class="buttons profiles__button"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+                <div class="profiles__container ">
+                    <div class="profiles__content">
+                        <img src="main/img/guests/ds/pushpendra.webp" alt="" class="profiles__img">
+                        <h3 class="profiles__title">Pushpendra Kumar</h3>
+                        <span class="profiles__category">Head- Data Science and Analytics</span><span class="profiles__category"> Exide Industries Limited </span>
+                        <a href="https://www.linkedin.com/in/kumarpushpendra" target="_blank"
+                            class="buttons profiles__button"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+                <div class="profiles__container ">
+                    <div class="profiles__content">
+                        <img src="main/img/guests/ds/usha.webp" alt="" class="profiles__img">
+                        <h3 class="profiles__title">Usha Rengaraju</h3>
+                        <span class="profiles__category">Principal Data Scientist</span><span class="profiles__category">MUST Research </span>
+                        <a href="https://www.linkedin.com/in/usha-rengaraju-b570b7a2" target="_blank"
+                            class="buttons profiles__button"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+                <div class="profiles__container ">
+                    <div class="profiles__content">
+                        <img src="main/img/guests/ds/aditthya.webp" alt="" class="profiles__img">
+                        <h3 class="profiles__title">Aditthya Ramakrishan</h3>
+                        <span class="profiles__category">Founder</span><span class="profiles__category">Next Tech Lab </span>
+                        <a href="http://linkedin.com/in/aditthya" target="_blank"
+                            class="buttons profiles__button"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+									</div>
+									<div class="vlt-gap-30"></div>
+								</div>
+								<div class="col-lg-4 offset-lg-1">
+									<div class="vlt-animated-block" style="animation-delay:400ms; animation-duration:700ms;">
+										<div class="vlt-slide-photo">
+											
+											<div class="vlt-slide-photo__particle vlt-fade-in-left--small negative-z-index" style="right: -40px; top: -40px; width: 290px; transition-delay: 1.2s;">
+                        <img src='main/img/root/plus-light-pattern.png' alt="">
+                      </div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+      <!-- Elementary -->
+
+      <div class="vlt-section pp-scrollable" data-anchor="ChiefGuestsPPS" data-brightness="light">
+				<div class="vlt-section__vertical-align">
+					<div class="vlt-section__content">
+						<!--Particles-->
+						<div class="vlt-section__particles">
+							<div class="vlt-particle vlt-custom--2355 vlt-fade-in-left"
+								style="background-image: url('main/img/root/elipse-light.png'); animation-delay: 500ms;">
+							</div>
+						</div>
+						<div class="container">
+							<div class="row align-items-center">
+								<div class="col-lg-7" id="Taqneeq">
+									<!--Animated Block-->
+								
+									<!--Animated Block-->
+									<div class="vlt-animated-block bd-grid" style="animation-delay:100ms; animation-duration:700ms;text-align:justify;" >
+								
+                  <div class="profiles__container ">
+                    <div class="profiles__content">
+                        <img src="main/img/guests/pps/saloni.webp" alt="" class="profiles__img">
+                        <h3 class="profiles__title">Saloni Goel</h3>
+                        <span class="profiles__category">Software Engineer</span><span class="profiles__category"> Microsoft</span>
+                        <a href="https://www.linkedin.com/in/salonigoel97/" target="_blank"
+                            class="buttons profiles__button"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+                <div class="profiles__container ">
+                    <div class="profiles__content">
+                        <img src="main/img/guests/pps/ayushi.webp" alt="" class="profiles__img">
+                        <h3 class="profiles__title">Ayushi Patel</h3>
+                        <span class="profiles__category">Software Engineer</span><span class="profiles__category">Facebook</span>
+                        <a href="https://www.linkedin.com/in/ayushi-patel-8115a8170/" target="_blank"
+                            class="buttons profiles__button"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+                <div class="profiles__container ">
+                    <div class="profiles__content">
+                        <img src="main/img/guests/pps/sumit.webp" alt="" class="profiles__img">
+                        <h3 class="profiles__title">Sumit Saboo</h3>
+                        <span class="profiles__category">Global Winner HackHarvard Hackathon </span>
+                        <a href="https://www.linkedin.com/in/sumit-saboo-029b0a135/" target="_blank"
+                            class="buttons profiles__button"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+                <div class="profiles__container ">
+                    <div class="profiles__content">
+                        <img src="main/img/guests/pps/amrit.webp" alt="" class="profiles__img">
+                        <h3 class="profiles__title">Amrit Kochar</h3>
+                        <span class="profiles__category">Microsoft Hackathon Winner</span>
+                        <a href="https://www.linkedin.com/in/amrit007/" target="_blank"
+                            class="buttons profiles__button"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+                <div class="profiles__container ">
+                    <div class="profiles__content">
+                       <img src="main/img/guests/pps/sayali.webp" alt="" class="profiles__img">
+                        <h3 class="profiles__title">Sayali Shivalkar</h3>
+                        <span class="profiles__category">Co-Founder & CTO</span><span class="profiles__category">Neoperk Technologies Pvt Ltd</span>
+                        <a href="https://www.linkedin.com/in/sayli-shivalkar-a46a4512a" target="_blank"
+                            class="buttons profiles__button"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+                <div class="profiles__container ">
+                    <div class="profiles__content">
+                        <img src="main/img/guests/pps/srinivas.webp" alt="" class="profiles__img">
+                        <h3 class="profiles__title">Dr. Srinivas Padmanabhuni</h3>
+                        <span class="profiles__category">Ph.D in AI</span><span class="profiles__category">University of Alberta, Edmonton, Canada</span>
+                        <a href="https://www.linkedin.com/in/zaid-mukaddam-26b155202/" target="_blank"
+                            class="buttons profiles__button"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+									</div>
+									<div class="vlt-gap-30"></div>
+								</div>
+								<div class="col-lg-4 offset-lg-1">
+									<div class="vlt-animated-block" style="animation-delay:400ms; animation-duration:700ms;">
+										<div class="vlt-slide-photo">
+											
+											<div class="vlt-slide-photo__particle vlt-fade-in-left--small negative-z-index" style="right: -40px; top: -40px; width: 290px; transition-delay: 1.2s;">
+                        <img src='main/img/root/plus-light-pattern.png' alt="">
+                      </div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
 			<!--Contact-->
 			<div class="vlt-section pp-scrollable" data-anchor="Contact" data-brightness="dark">
@@ -624,6 +875,10 @@
 				<li data-menuanchor="Awards"></li>
 				<li data-menuanchor="NMIMS"></li>
 				<li data-menuanchor="Creators"></li>
+        <li data-menuanchor="ChiefGuests"></li>
+        <li data-menuanchor="ChiefGuestsDS"></li>
+        <li data-menuanchor="ChiefGuestsPPS"></li>
+        
 				<li data-menuanchor="Contact"></li>
 			</ul>
 			<!--Numbers-->
